@@ -18,8 +18,8 @@
 		<div class="graph">
 			<script src="js/main.js"> </script>
 		</div>
-
-		<div class="options">
+		<div id="mySidebar" class="sidebar">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<table cellspacing="2">
 			<tr>
 				<td>Season:</td>
@@ -40,7 +40,7 @@
 			<tr>
 				<td>Day Count Mode:</td>
 				<td>
-					<select id="select_daycountmode" onChange="rebuild()">
+					<select id="select_daycountmode" onChange="refresh()">
 						<option value="0" selected="true">Days Left</option>
 						<option value="1">Planting Days</option>
 					</select>
@@ -81,7 +81,7 @@
 				<td>
 					<input type="checkbox" id="check_seedsBuy" onChange="refresh()" checked="true" />
 					<label for="check_seedsBuy">Purchase Seeds</label><br />
-					<input type="checkbox" id="check_seedsSVE" onChange="rebuild()" />
+					<input type="checkbox" id="check_seedsSVE" onChange="refresh()" />
 					<label for="check_seedsSVE">Playing SVE (For Joja changes)</label><br />
 					<input type="checkbox" id="check_seedsPierre" onChange="rebuild()" />
 					<label for="check_seedsPierre">Pierre</label><br />
@@ -108,15 +108,15 @@
 			<tr>
 				<td>Fertilizer:</td>
 				<td>
-					<input type="checkbox" id="check_ignoreFert" onChange="rebuild()" />
+					<input type="checkbox" id="check_ignoreFert" onChange="refresh()" />
 					<label for="check_ignoreFert">Ignore Fertilizer Cost</label><br />
-					<input type="checkbox" id="check_craftFert" onChange="rebuild()" />
+					<input type="checkbox" id="check_craftFert" onChange="refresh()" />
 					<label for="check_craftFert">Crafted Fertilizer</label><br />
-					<input type="checkbox" id="check_tapper" onChange="rebuild()" />
+					<input type="checkbox" id="check_tapper" onChange="refresh()" />
 					<label for="check_tapper">Tapper Profession</label><br />
-					<input type="checkbox" id="check_botanist" onChange="rebuild()" />
+					<input type="checkbox" id="check_botanist" onChange="refresh()" />
 					<label for="check_botanist">Botanist Profession</label><br />
-					<select id="select_fishing" onChange="rebuild()">
+					<select id="select_fishing" onChange="refresh()">
 						<option value="0" selected="true">None</option>
 						<option value="1">Fisher</option>
 						<option value="2">Angler</option>
@@ -130,9 +130,9 @@
 				<td>
 					<input type="number" id="number_level" value="0" onChange="refresh()"/>
 					<label for="check_farming">Farming Level</label><br />
-					<input type="checkbox" id="check_tiller" onChange="rebuild()" />
+					<input type="checkbox" id="check_tiller" onChange="refresh()" />
 					<label for="check_tiller">Tiller Profession</label><br />
-					<select id="select_farmingProfession" onChange="rebuild()">
+					<select id="select_farmingProfession" onChange="refresh()">
 						<option value="0" selected="true">None</option>
 						<option value="1">Artisan</option>
 						<option value="2">Agriculturalist</option>
@@ -149,8 +149,7 @@
 			<tr>
 				<td id="tdhelp" colspan="2"><div id="divhelp"><a href="help.html">Help</a></div></td>
 			</tr>
-		</table>
-		<table cellspacing="2">
+			
 			<tr>
 				<td>Mods:</td>
 				<td>
@@ -170,7 +169,11 @@
 			</tr>
 		</table>
 		</div>
-
+		<div id="main">
+			<button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
+			<h2>Collapsed Sidebar</h2>
+			<p>Edit Crop Settings</p>
+		</div>
 		<div class="footer">
 			<p><a href="http://stardewvalley.net/" target="_blank">Stardew Valley v1.41</a> &copy; <a href="https://twitter.com/ConcernedApe" target="_blank">ConcernedApe</a> | Website designed by Yaramy | v1.0 | <a href="https://thorinair.github.io/Stardew-Profits/" target="_blank">Original Website</a> by <a href="https://twitter.com/thorinair_music" target="_blank">Thorinair</a> |</p>
 		</div>
