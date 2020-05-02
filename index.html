@@ -53,25 +53,21 @@
 			</tr>
 
 			<tr>
-				<td>Produce type:</td>
+				<td>Product:</td>
 				<td>
 					<select id="select_produce" onChange="refresh()">
 						<option value="0" selected="true">Raw</option>
 						<option value="1">Jar</option>
 						<option value="2">Keg</option>
 					</select>
-				</td>
-			</tr>
-
-			<tr>
-				<td>Produce quality (Wine):</td>
-				<td>
-					<select id="select_producequality" onChange="refresh()">
+					<label for="select_produce">Product Type</label><br />
+					<select id="select_wineQuality" onChange="refresh()">
 						<option value="0" selected="true">None</option>
 						<option value="1">Silver</option>
 						<option value="2">Gold</option>
 						<option value="3">Iridium</option>
 					</select>
+					<label for="select_wineQuality">Wine Quality</label><br />
 				</td>
 			</tr>
 
@@ -81,16 +77,15 @@
 			</tr>
 
 			<tr>
-				<td>Seed sources:</td>
+				<td>Seeds:</td>
 				<td>
-					<input type="checkbox" id="check_seedsPierre" onChange="rebuild()" checked="true" /> <label for="check_seedsPierre">Pierre</label><br />
-					<input type="checkbox" id="check_seedsJoja" onChange="rebuild()" /> <label for="check_seedsJoja">Joja</label><br />
+					<input type="checkbox" id="check_buySeed" onChange="refresh()" checked="true" />
+					<label for="check_buySeed">Purchase Seeds</label><br />
+					<input type="checkbox" id="check_seedsPierre" onChange="rebuild()" />
+					<label for="check_seedsPierre">Pierre</label><br />
+					<input type="checkbox" id="check_seedsJoja" onChange="rebuild()" />
+					<label for="check_seedsJoja">Joja</label><br />
 				</td>
-			</tr>
-
-			<tr>
-				<td>Pay for seeds:</td>
-				<td><input type="checkbox" id="check_buySeed" onChange="refresh()" /></td>
 			</tr>
 
 			<tr>
@@ -125,27 +120,20 @@
 					<label for="check_fishing">Fishing Profession</label><br />
 				</td>
 			</tr>
-
+			
 			<tr>
-				<td>Farming level:</td>
-				<td><input type="number" id="number_level" value="0" onChange="refresh()"/></td>
-			</tr>
-
-			<tr>
-				<td>Level 5 skills:</td>
+				<td>Farming Skill:</td>
 				<td>
-					<input type="checkbox" id="check_skillsTill" onChange="refresh()" /> Tiller<br />
-				</td>
-			</tr>
-
-			<tr>
-				<td>Level 10 skills:</td>
-				<td>
-					<select id="select_skills" onChange="refresh()">
+					<input type="number" id="number_level" value="0" onChange="refresh()"/>
+					<label for="check_farming">Farming Level</label><br />
+					<input type="checkbox" id="check_tiller" onChange="rebuild()" />
+					<label for="check_tiller">Tiller Profession</label><br />
+					<select id="select_farmingProfession" onChange="rebuild()">
 						<option value="0" selected="true">None</option>
-						<option value="1">Agriculturist</option>
-						<option value="2">Artisan</option>
+						<option value="1">Artisan</option>
+						<option value="2">Agriculturalist</option>
 					</select>
+					<label for="check_farmingProfession">Tiller Lv10 Profession</label><br />
 				</td>
 			</tr>
 
