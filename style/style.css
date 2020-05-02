@@ -62,18 +62,42 @@
   .sidebar a {font-size: 18px;}
 }
 
-.options {
-	margin: auto;
-	margin-top: 8px;
-	margin-bottom: 8px;
+.tooltipTdLeft {
 	font: 0.875em sans-serif;
 	color: #eeeeee;
-	background-color: #333333;
-	border-radius: 8px;
-	padding: 8px;
-	width: 768px;
-	height: 174px;
-    -webkit-filter: drop-shadow(0px 2px 8px rgba(0,0,0,0.75));
-    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#000')";
-    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#000')";
+	padding: 1px 4px 0px 4px;
+	margin-bottom: 1px;
+    vertical-align: bottom;
+}
+
+.tooltipTdLeftSpace {
+	font: 0.875em sans-serif;
+	color: #eeeeee;
+	padding: 8px 4px 0px 4px;
+	margin-bottom: 1px;
+    vertical-align: bottom;
+}
+
+.tooltipTdRight {
+	font: 0.875em sans-serif;
+	color: #eeeeee;
+	padding: 0px 4px 0px 4px;
+	margin-bottom: 1px;
+    vertical-align: bottom;
+}
+
+.tooltipTdRightPos {
+	font: 0.875em sans-serif;
+	color: lime;
+	padding: 0px 4px 0px 4px;
+	margin-bottom: 1px;
+    vertical-align: bottom;
+}
+
+.tooltipTdRightNeg {
+	font: 0.875em sans-serif;
+	color: red;
+	padding: 0px 4px 0px 4px;
+	margin-bottom: 1px;
+    vertical-align: bottom;
 }
