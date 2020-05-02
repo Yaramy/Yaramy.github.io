@@ -79,12 +79,16 @@
 			<tr>
 				<td>Seeds:</td>
 				<td>
-					<input type="checkbox" id="check_buySeed" onChange="refresh()" checked="true" />
-					<label for="check_buySeed">Purchase Seeds</label><br />
+					<input type="checkbox" id="check_seedsBuy" onChange="refresh()" checked="true" />
+					<label for="check_seedsBuy">Purchase Seeds</label><br />
+					<input type="checkbox" id="check_seedsSVE" onChange="rebuild()" />
+					<label for="check_seedsSVE">Playing SVE (For Joja changes)</label><br />
 					<input type="checkbox" id="check_seedsPierre" onChange="rebuild()" />
 					<label for="check_seedsPierre">Pierre</label><br />
 					<input type="checkbox" id="check_seedsJoja" onChange="rebuild()" />
 					<label for="check_seedsJoja">Joja</label><br />
+					<input type="checkbox" id="check_seedsOther" onChange="rebuild()" />
+					<label for="check_seedsOther">Other</label><br />
 				</td>
 			</tr>
 
@@ -136,6 +140,16 @@
 					<label for="check_farmingProfession">Tiller Lv10 Profession</label><br />
 				</td>
 			</tr>
+			
+			<tr>
+				<td>Mod:</td>
+				<td>
+					<select id="select_mods" multiple onChange="refresh()">
+						<option value="0" selected="true">Vanilla</option>
+						<option value="1">Fruits And Veggies</option>
+					</select>
+				</td>
+			</tr>
 
 			<tr>
 				<td>Show extra info:</td>
@@ -145,7 +159,6 @@
 			<tr>
 				<td id="tdhelp" colspan="2"><div id="divhelp"><a href="help.html">Help</a></div></td>
 			</tr>
-
 		</table>	
 		</div>
 
