@@ -11,7 +11,7 @@ body {
 	margin-top: 16px;
 	background-image: url("../img/title.png");
 	width: 512px;
-	height: 72px;
+	height: 250px;
     -webkit-filter: drop-shadow(0px 2px 8px rgba(0,0,0,0.5));
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#444')";
     filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=0, OffY=2, Color='#444')";
