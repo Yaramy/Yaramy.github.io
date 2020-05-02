@@ -1,3 +1,8 @@
+body {
+  font-family: "Arial", sans-serif;
+  color: white;
+}
+
 /* The sidebar menu */
 .sidebar {
   height: 100%; /* 100% Full-height */
@@ -62,42 +67,3 @@
   .sidebar a {font-size: 18px;}
 }
 
-.tooltipTdLeft {
-	font: 0.875em sans-serif;
-	color: #eeeeee;
-	padding: 1px 4px 0px 4px;
-	margin-bottom: 1px;
-    vertical-align: bottom;
-}
-
-.tooltipTdLeftSpace {
-	font: 0.875em sans-serif;
-	color: #eeeeee;
-	padding: 8px 4px 0px 4px;
-	margin-bottom: 1px;
-    vertical-align: bottom;
-}
-
-.tooltipTdRight {
-	font: 0.875em sans-serif;
-	color: #eeeeee;
-	padding: 0px 4px 0px 4px;
-	margin-bottom: 1px;
-    vertical-align: bottom;
-}
-
-.tooltipTdRightPos {
-	font: 0.875em sans-serif;
-	color: lime;
-	padding: 0px 4px 0px 4px;
-	margin-bottom: 1px;
-    vertical-align: bottom;
-}
-
-.tooltipTdRightNeg {
-	font: 0.875em sans-serif;
-	color: red;
-	padding: 0px 4px 0px 4px;
-	margin-bottom: 1px;
-    vertical-align: bottom;
-}
