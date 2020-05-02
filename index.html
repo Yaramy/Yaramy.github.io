@@ -23,25 +23,43 @@
 		<table cellspacing="2">
 		
 			<tr>
-				<td>Season:</td>
+				<td>Plant in Greenhouse:</td>
+				<td><input type="checkbox" id="check_greenhouse" onChange="refresh()" /></td>
+			</tr>
+		
+			<tr>
+				<td>Spring Crops:</td>
+				<td><input type="checkbox" id="check_spring" onChange="refresh()" /></td>
+			</tr>
+			
+			<tr>
+				<td>Summer Crops:</td>
+				<td><input type="checkbox" id="check_summer" onChange="refresh()" /></td>
+			</tr>
+			
+			<tr>
+				<td>Fall Crops:</td>
+				<td><input type="checkbox" id="check_fall" onChange="refresh()" /></td>
+			</tr>
+			
+			<tr>
+				<td>Winter Crops:</td>
+				<td><input type="checkbox" id="check_winter" onChange="refresh()" /></td>
+			</tr>
+
+			<tr>
+				<td>Day Count Mode:</td>
 				<td>
-					<select id="select_season" onChange="rebuild()">
-						<option value="0" selected="true">Spring (28 days)</option>
-						<option value="1">Summer (28 days)</option>
-						<option value="2">Fall (28 days)</option>
-						<option value="3">Greenhouse</option>
+					<select id="select_daycountmode" onChange="rebuild()">
+						<option value="0" selected="true">Days Left</option>
+						<option value="1">Planting Days</option>
 					</select>
 				</td>
 			</tr>
-
-			<tr id="current_day_row">
-				<td>Current day:</td>
+			
+			<tr id="daycount_row">
+				<td>Days:</td>
 				<td><input type="number" id="current_day" value="1" onChange="refresh()"/></td>
-			</tr>
-
-			<tr id="number_days_row">
-				<td>Number of days:</td>
-				<td><input type="number" id="number_days" value="28" onChange="refresh()"/></td>
 			</tr>
 
 			<tr>
@@ -56,13 +74,20 @@
 			</tr>
 
 			<tr>
-				<td>Number of crops:</td>
-				<td><input type="number" id="number_planted" value="1" onChange="refresh()"/></td>
+				<td>Produce quality (Wine):</td>
+				<td>
+					<select id="select_producequality" onChange="refresh()">
+						<option value="0" selected="true">None</option>
+						<option value="1">Silver</option>
+						<option value="2">Gold</option>
+						<option value="3">Iridium</option>
+					</select>
+				</td>
 			</tr>
 
 			<tr>
-				<td>Average profits:</td>
-				<td><input type="checkbox" id="check_average" onChange="refresh()" /></td>
+				<td>Number of crops:</td>
+				<td><input type="number" id="number_planted" value="1" onChange="refresh()"/></td>
 			</tr>
 
 			<tr id="cross_season_row">
@@ -79,7 +104,6 @@
 				<td>
 					<input type="checkbox" id="check_seedsPierre" onChange="rebuild()" checked="true" /> <label for="check_seedsPierre">Pierre</label><br />
 					<input type="checkbox" id="check_seedsJoja" onChange="rebuild()" checked="true" /> <label for="check_seedsJoja">Joja</label><br />
-					<input type="checkbox" id="check_seedsSpecial" onChange="rebuild()" checked="true" /> <label for="check_seedsSpecial">Special</label>
 				</td>
 			</tr>
 
@@ -89,7 +113,7 @@
 			</tr>
 
 			<tr>
-				<td>Fertilizer:</td>
+				<td>Used Fertilizer:</td>
 				<td>
 					<select id="select_fertilizer" onChange="refresh()">
 						<option value="0" selected="true">None</option>
@@ -102,10 +126,24 @@
 			</tr>
 
 			<tr>
-				<td>Pay for fertilizer:</td>
-				<td><input type="checkbox" id="check_buyFert" onChange="refresh()" /></td>
+				<td>Fertilizer:</td>
+				<td>
+					<input type="checkbox" id="check_ignoreFert" onChange="rebuild()" checked="true" />
+					<label for="check_ignoreFert">Ignore Fertilizer Cost</label><br />
+					<input type="checkbox" id="check_craftFert" onChange="rebuild()" checked="true" />
+					<label for="check_craftFert">Crafted Fertilizer</label><br />
+					<input type="checkbox" id="check_tapper" onChange="rebuild()" checked="true" />
+					<label for="check_tapper">Tapper Profession</label><br />
+					<input type="checkbox" id="check_botanist" onChange="rebuild()" checked="true" />
+					<label for="check_botanist">Botanist Profession</label><br />
+					<select id="select_fishing" onChange="rebuild()">
+						<option value="0" selected="true">None</option>
+						<option value="1">Fisher</option>
+						<option value="2">Angler</option>
+					</select>
+					<label for="check_fishing">Fishing Profession</label><br />
+				</td>
 			</tr>
-
 		</table>
 
 		<table cellspacing="2">
@@ -146,7 +184,7 @@
 		</div>
 
 		<div class="footer">
-			<p><a href="http://stardewvalley.net/" target="_blank">Stardew Valley v1.41</a> &copy; <a href="https://twitter.com/ConcernedApe" target="_blank">ConcernedApe</a> | Website designed by Yaramy | v1.0 | <a href="https://thorinair.github.io/Stardew-Profits/" target="_blank">Original Website</a> by <a href="https://twitter.com/thorinair_music" target="_blank">Thorinair</a></p>
+			<p><a href="http://stardewvalley.net/" target="_blank">Stardew Valley v1.41</a> &copy; <a href="https://twitter.com/ConcernedApe" target="_blank">ConcernedApe</a> | Website designed by Yaramy | v1.0 | <a href="https://thorinair.github.io/Stardew-Profits/" target="_blank">Original Website</a> by <a href="https://twitter.com/thorinair_music" target="_blank">Thorinair</a> |</p>
 		</div>
 
 		<script src="js/time.js"> </script>
