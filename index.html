@@ -26,13 +26,13 @@
 				<td>
 					<input type="checkbox" id="check_spring" onChange="rebuild()" checked="true" />
 					<label for="check_spring">Spring Crops</label><br />
-					<input type="checkbox" id="check_summer" onChange="rebuild()" checked="true" />
+					<input type="checkbox" id="check_summer" onChange="rebuild()" />
 					<label for="check_summer">Summer Crops</label><br />
-					<input type="checkbox" id="check_fall" onChange="rebuild()" checked="true" />
+					<input type="checkbox" id="check_fall" onChange="rebuild()" />
 					<label for="check_fall">Fall Crops</label><br />
-					<input type="checkbox" id="check_winter" onChange="rebuild()" checked="true" />
+					<input type="checkbox" id="check_winter" onChange="rebuild()" />
 					<label for="check_winter">Winter Crops</label><br />
-					<input type="checkbox" id="check_greenhouse" onChange="rebuild()" checked="true" />
+					<input type="checkbox" id="check_greenhouse" onChange="rebuild()" />
 					<label for="check_greenhouse">Plant in Greenhouse</label><br />
 				</td>
 			</tr>
@@ -80,16 +80,11 @@
 				<td><input type="number" id="number_planted" value="1" onChange="refresh()"/></td>
 			</tr>
 
-			<tr id="cross_season_row">
-				<td>Cross season:</td>
-				<td><input type="checkbox" id="cross_season" onChange="refresh()" /></td>
-			</tr>
-
 			<tr>
 				<td>Seed sources:</td>
 				<td>
 					<input type="checkbox" id="check_seedsPierre" onChange="rebuild()" checked="true" /> <label for="check_seedsPierre">Pierre</label><br />
-					<input type="checkbox" id="check_seedsJoja" onChange="rebuild()" checked="true" /> <label for="check_seedsJoja">Joja</label><br />
+					<input type="checkbox" id="check_seedsJoja" onChange="rebuild()" /> <label for="check_seedsJoja">Joja</label><br />
 				</td>
 			</tr>
 
@@ -114,13 +109,13 @@
 			<tr>
 				<td>Fertilizer:</td>
 				<td>
-					<input type="checkbox" id="check_ignoreFert" onChange="rebuild()" checked="false" />
+					<input type="checkbox" id="check_ignoreFert" onChange="rebuild()" />
 					<label for="check_ignoreFert">Ignore Fertilizer Cost</label><br />
-					<input type="checkbox" id="check_craftFert" onChange="rebuild()" checked="false" />
+					<input type="checkbox" id="check_craftFert" onChange="rebuild()" />
 					<label for="check_craftFert">Crafted Fertilizer</label><br />
-					<input type="checkbox" id="check_tapper" onChange="rebuild()" checked="false" />
+					<input type="checkbox" id="check_tapper" onChange="rebuild()" />
 					<label for="check_tapper">Tapper Profession</label><br />
-					<input type="checkbox" id="check_botanist" onChange="rebuild()" checked="false" />
+					<input type="checkbox" id="check_botanist" onChange="rebuild()" />
 					<label for="check_botanist">Botanist Profession</label><br />
 					<select id="select_fishing" onChange="rebuild()">
 						<option value="0" selected="true">None</option>
