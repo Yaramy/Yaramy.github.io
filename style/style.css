@@ -1,6 +1,11 @@
-body {
-  font-family: "Arial", sans-serif;
-  color: white;
+body, html {
+  height: 100%;
+}
+
+.table {
+	color: #eeeeee;
+	font: 0.875em sans-serif;
+	opacity: 0.75;
 }
 
 .bg {
