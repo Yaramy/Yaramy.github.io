@@ -1,5 +1,6 @@
 body, html {
   height: 100%;
+  color: #eeeeee;
 }
 
 .table {
@@ -56,6 +57,7 @@ body, html {
   border: none;
 }
 
+/* Change color when hovering over the button */
 .openbtn:hover {
   background-color: #444;
 }
